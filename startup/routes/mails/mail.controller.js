@@ -61,6 +61,8 @@ mailController.post('/', async (req, res)=>{
                 })
             }
         })
+        // For Mongo DB
+
         // const found = await ref.push().set({
         //     name: data.name,
         //     phone: data.phone,
@@ -97,6 +99,7 @@ mailController.post('/', async (req, res)=>{
         // }
     }catch(ex){
         console.log(ex)
+        return res.status(500).send({error: ex, message: ex.message})
     }
 })
 

@@ -1,6 +1,7 @@
 const sls = require('serverless-http')
 const app = require('./startup/app')
 
+// For Mongo DB
 // require('./startup/db')()
 
 const handler = sls(app)
