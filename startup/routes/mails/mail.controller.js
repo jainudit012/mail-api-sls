@@ -35,7 +35,7 @@ mailController.post('/', async (req, res)=>{
     try{
         ref.orderByChild('email').equalTo(data.email).once('value', (snapshot)=>{
             if(snapshot.val()){
-                return res.send({error: false, msg: 'Mail Already Sent!'})
+                return res.status(400).send({error: false, msg: 'Mail Already Sent!'})
             }else {
                 sesClient.sendEmail({
                     to: data.email,
@@ -44,7 +44,7 @@ mailController.post('/', async (req, res)=>{
                     message: html(data.name)
                 }, 
                 async (sesErr, sesData, sesResp)=>{
-                    if(sesErr||sesResp.statusCode!==200) return res.status(500).send({error: true, msg: 'MAIL NOT SENT', err:sesErr})
+                    if(sesErr||sesResp.statusCode!==200) return res.status(400).send({error: true, msg: 'MAIL NOT SENT', err:sesErr})
                     else {
                         let setDoc = ref.push().set({
                             name: data.name,
