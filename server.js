@@ -4,9 +4,11 @@ const app = require('./startup/app')
 // For Mongo DB
 // require('./startup/db')()
 
-const handler = sls(app)
+// const handler = sls(app)
 
-module.exports.run = async (event, context)=>{
-    // await require('./startup/db')()
-    return await handler(event,context)
-}
+// module.exports.run = async (event, context)=>{
+//     // await require('./startup/db')()
+//     return await handler(event,context)
+// }
+
+module.exports.run = sls(app)
