@@ -10,7 +10,6 @@ provider:
     awsApiSecret: ${env:awsApiSecret}
     sesVerifiedSenderEmail: ${env:sesVerifiedSenderEmail}
     awsRegion: ${env:awsRegion}
-    DB: ${env:DB}
 plugins:
   - serverless-dotenv-plugin
   - serverless-offline
