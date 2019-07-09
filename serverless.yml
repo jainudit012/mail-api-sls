@@ -1,0 +1,35 @@
+service: api-mail
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${opt:stage, 'dev'}
+  region: ap-southeast-1
+  environment: 
+    awsApiKey: ${env:awsApiKey}
+    awsApiSecret: ${env:awsApiSecret}
+    sesVerifiedSenderEmail: ${env:sesVerifiedSenderEmail}
+    awsRegion: ${env:awsRegion}
+    DB: ${env:DB}
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-offline
+
+# do deploy sls deploy --stage stage
+
+package:
+  include:
+    - mails/**
+
+functions:
+  app:
+    handler: server.run
+    events:
+      - http:
+          path: /
+          method: ANY
+          cors: true
+      - http:
+          path: /{proxy+}
+          method: ANY
+          cors: true
