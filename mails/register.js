@@ -1,4 +1,4 @@
-module.exports = (name)=>`
+module.exports = (name) => `
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
@@ -124,18 +124,14 @@ module.exports = (name)=>`
 														<tr>
 															<td class="text-center pb25" style="color:#666666; font-family:'Open Sans', sans-serif; font-size:16px; line-height:30px; text-align:left; padding-bottom:25px;">Hope you are all geared up for your 1st job!
 														</tr>
-
-<tr>
+														<tr>
 															<td class="text-center pb25" style="color:#666666; font-family:'Open Sans', sans-serif; font-size:16px; line-height:30px; text-align:left; padding-bottom:25px;">Like we discussed, at Opscale, we typically use a 1-week (7 days) project to evaluate you and see if we are a good fit for each other. This also gives you an opportunity to know us better in terms of people, culture and workload.
 Our focus here is to see how prepared you are with the fundamentals, how fast you can learn and figure things out in a real setting.
 														</tr>
-
-
-<tr>
+														<tr>
 															<td class="text-center pb25" style="color:#666666; font-family:'Open Sans', sans-serif; font-size:16px; line-height:30px; text-align:left; padding-bottom:25px;">During these 7 days, our developers will be available on slack/meetup session if you need any help.
 														</tr>
-
-<tr>
+														<tr>
 															<td class="text-center pb25" style="color:#666666; font-family:'Open Sans', sans-serif; font-size:16px; line-height:30px; text-align:left; padding-bottom:25px;">We will be providing you some pointers (Tutorials and Blog) which you can go through over the weekend. We expect you to complete the project within 7 days starting from Tuesday, 9th July. Soon, we will be sending out a slack invitation for everyone and instructions on how to get onboard for the project.
                                                         </tr>
                                                         <tr>
@@ -144,15 +140,9 @@ Our focus here is to see how prepared you are with the fundamentals, how fast yo
                                                         <tr>
 															<td class="text-center pb25" style="color:#666666; font-family:'Open Sans', sans-serif; font-size:16px; line-height:30px; text-align:left; padding-bottom:25px;">Further communications will follow on Slack once you join!
 														</tr>
-
-<tr>
+														<tr>
 															<td class="text-center pb25" style="color:#666666; font-family:'Open Sans', sans-serif; font-size:16px; line-height:30px; text-align:left; padding-bottom:25px;">Best wishes, Opscale Team.
 														</tr>
-
-
-
-
-														
 													</table>
 												</td>
 											</tr>
@@ -161,7 +151,6 @@ Our focus here is to see how prepared you are with the fundamentals, how fast yo
 								</tr>
 							</table>
 							<!-- END Intro -->
-
 
 							<!-- Footer -->
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
